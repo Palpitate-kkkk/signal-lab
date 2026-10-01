@@ -4,7 +4,6 @@ import plotly.graph_objects as go
 from scipy import signal
 import streamlit as st
 
-st.set_page_config(page_title="模块⑧ 数字滤波器设计", page_icon="🔢", layout="wide")
 
 st.title("模块⑧ 数字滤波器设计")
 st.caption("把模拟原型 H(s) 变成真正能用的 H(z)：冲激响应不变法 vs 双线性变换")

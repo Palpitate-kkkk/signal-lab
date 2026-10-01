@@ -4,7 +4,6 @@ import plotly.graph_objects as go
 from scipy import signal
 import streamlit as st
 
-st.set_page_config(page_title="模块⑦ 三大逼近对比", page_icon="📊", layout="wide")
 
 st.title("模块⑦ 三大逼近对比")
 st.caption("巴特沃斯 / 切比雪夫 I 型 / 椭圆 —— 同样阶数下，谁的过渡带最陡？")
