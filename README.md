@@ -1,5 +1,8 @@
 # signal-lab · 信号与系统交互式实验室
 
+🔗 **在线演示**：[zju-signal-lab.streamlit.app](https://zju-signal-lab.streamlit.app)
+（Streamlit 免费版闲置会休眠，首次打开需唤醒约 30 秒）
+
 把《信号与系统》里最抽象的几个概念，做成**可以拖参数、当场看变化**的网页。
 
 不背公式，先动手。
