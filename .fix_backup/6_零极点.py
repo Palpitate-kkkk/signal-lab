@@ -223,10 +223,8 @@ with st.expander("🎯 842 考点速记", expanded=False):
     st.markdown(r"""
 **① 距离比公式（核心）**
 
-$$
-|H(j\omega)| = |K|\cdot\frac{\prod_{i}|j\omega - z_i|}{\prod_{k}|j\omega - p_k|}
-= |K|\cdot\frac{\text{所有零点到 } j\omega \text{ 的距离之积}}{\text{所有极点到 } j\omega \text{ 的距离之积}}
-$$
+$$|H(j\omega)| = |K|\cdot\frac{\prod_{i}|j\omega - z_i|}{\prod_{k}|j\omega - p_k|}
+= |K|\cdot\frac{\text{所有零点到 } j\omega \text{ 的距离之积}}{\text{所有极点到 } j\omega \text{ 的距离之积}}$$
 
 **离虚轴越近的极点 / 零点，对频率响应的影响越大。**
 

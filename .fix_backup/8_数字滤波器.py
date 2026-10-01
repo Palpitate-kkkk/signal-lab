@@ -161,11 +161,9 @@ with st.expander("📐 预畸变（prewarping）到底在算什么？", expanded
     st.markdown(r"""
 双线性变换把 $j\Omega$ 轴**非线性**地压到单位圆上：
 
-$$
-\Omega = \frac{2}{T}\tan\!\left(\frac{\omega}{2}\right)
+$$\Omega = \frac{2}{T}\tan\!\left(\frac{\omega}{2}\right)
 \qquad\Longleftrightarrow\qquad
-\omega = 2\arctan\!\left(\frac{\Omega T}{2}\right)
-$$
+\omega = 2\arctan\!\left(\frac{\Omega T}{2}\right)$$
 
 所以如果你直接拿 $\Omega_c = 2\pi f_c$ 去造模拟原型，变换到数字域后
 $-3\ \mathrm{dB}$ 点会**偏离** $f_c$，而且频率越高偏得越狠（高频被压缩）。
@@ -173,10 +171,8 @@ $-3\ \mathrm{dB}$ 点会**偏离** $f_c$，而且频率越高偏得越狠（高�
 **预畸变就是反过来解一次**：先钉死"我想要的数字截止频率是 $\omega_c$"，
 再反算出该用多大的**模拟**截止频率：
 
-$$
-\Omega_c' = \frac{2}{T}\tan\!\left(\frac{\omega_c}{2}\right)
-= 2 f_s \tan\!\left(\frac{\pi f_c}{f_s}\right)
-$$
+$$\Omega_c' = \frac{2}{T}\tan\!\left(\frac{\omega_c}{2}\right)
+= 2 f_s \tan\!\left(\frac{\pi f_c}{f_s}\right)$$
 
 用这个 $\Omega_c'$ 去造模拟原型，再过双线性变换，数字域 $-3\ \mathrm{dB}$ 点就**精确落回 $f_c$**。
 """)
